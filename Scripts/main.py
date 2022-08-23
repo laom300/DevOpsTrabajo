@@ -8,6 +8,7 @@ class Item(BaseModel):
     price: str
     is_offer: Union[bool, None] = None
 
+        
 app = FastAPI()
 
 
