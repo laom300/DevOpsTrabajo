@@ -19,7 +19,7 @@ def read_root():
     return {"items": response.json()}
 
 
-@app.get("/item/{item_id}")
+@app.get("/items/{item_id}")
 def read_item(item_id: int):
     url = "https://6303e4b50de3cd918b3fd56c.mockapi.io/items"
     response = requests.get(url,{}, timeout = 5)
